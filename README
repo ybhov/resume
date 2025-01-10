@@ -1,0 +1,7 @@
+Usage:
+
+1. Go to (https://www.tug.org/texlive/) to install LaTex on your system.
+2. Use a VSCode extension or CLI to generate desired files.
+
+Ex. for CLI:
+latexmk -pdf Resume.tex
