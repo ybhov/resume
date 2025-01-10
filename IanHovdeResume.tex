@@ -1,0 +1,100 @@
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{fullpage}
+\sloppy
+\usepackage[none]{hyphenat}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% \usepackage[margin=1in]{geometry}
+\usepackage[top=0in, bottom=.5in, left=.25in, right=.25in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{titlesec}
+
+\titlespacing{\section}{0pt}{0.25em}{.25em}
+\setlength{\parindent}{0pt}
+
+\definecolor{blueishgray}{HTML}{6c7f93}
+\definecolor{darkgray}{HTML}{494c4e}
+\definecolor{datecolor}{HTML}{666666}
+\usepackage{tabularx}
+\setlist{nolistsep}
+\begin{document}
+\color{darkgray}
+\vspace*{-.25in}
+\pagestyle{empty}
+
+\noindent
+\hspace*{-\dimexpr\oddsidemargin+1in\relax}%
+\makebox[\paperwidth]{\color{blueishgray}\rule{\paperwidth}{20pt}}
+
+% Header
+\begin{center}
+    {\huge \textbf{\textcolor{blueishgray}{Ian Hovde}}} \\
+    \large \textcolor{blueishgray}{Software Engineer} \\
+    \normalsize \textcolor{blueishgray}{ianhovde@gmail.com | Boston, MA | linkedin.com/in/ianhovde}
+\end{center}
+
+\noindent\rule{\linewidth}{.25pt}
+
+% Summary
+\section*{\textcolor{blueishgray}{Summary}}
+Experienced software engineer with a proven track record in backend development, API design, and database management. 
+Adept at leading complex migrations, optimizing systems for efficiency, and driving the adoption of modern development practices. 
+Strong mentorship skills, fostering a collaborative and productive team atmosphere through clear communication and hands-on guidance. 
+Passionate about delivering high-quality solutions that align with business objectives and exceed user expectations.
+
+\section*{\textcolor{blueishgray}{Experience}}
+\begin{tabularx}{\linewidth}{l|>{\raggedright\arraybackslash}X}
+  \textbf{\textcolor{blueishgray}{SharpenCX}} & \textbf{\textcolor{blueishgray}{Software Engineer Team Lead}} \\ {\small \textcolor{datecolor}{06/2024-Present}} & 
+  \begin{itemize}[leftmargin=*]
+    \item Led the migration and upgrade of a multi-million dollar application stack with 70+ applications, moving from on-premises data centers to multiple AWS regions. Utilized Docker, Bitbucket Pipelines, and AWS CDK to create a PCI-compliant and fully redundant environment.
+    % \item Led migration and upgrade of a multi-million dollar application stack, comprising 70+ applications, from on-premises data centers to multiple AWS regions, leveraging Docker, Bitbucket Pipelines, and AWS CDK
+    \item Managed a team of 5 engineers across 3 product stacks, facilitating standups, bi-weekly one-on-ones, and performance reviews to drive team alignment and individual growth.
+    \item Reviewed and approved pull requests to ensure high code quality and compliance with security standards, safeguarding sensitive data including PCI and HIPAA information.
+  \end{itemize} \\
+  \textbf{\textcolor{blueishgray}{SharpenCX}} & \textbf{\textcolor{blueishgray}{Software Engineer ll}} \\ {\small \textcolor{datecolor}{10/2023-05/2024}} &
+  \begin{itemize}[leftmargin=*]
+    \item Implemented company-wide adoption of CI/CD pipelines using Bitbucket Pipelines. 
+    \item Aided in backend development for a new customer facing product (ExpressJS, TypeScript), advancing it from Beta to GA.
+    \item Managed and executed all legacy production releases, ensuring stability and adherence to test plans.
+    \item Evaluated incoming Jira tickets to assess priority and provide time estimates for completion.
+  \end{itemize} \\
+  \textbf{\textcolor{blueishgray}{Plum Voice}} & \textbf{\textcolor{blueishgray}{Senior Software Engineer}} \\ {\small \textcolor{datecolor}{03/2023-09/2023}} &
+  \begin{itemize}[leftmargin=*]
+    \item Primary engineer on core web and voice processing application, utilized by the entire customer base, handling up to 10,000 concurrent connections during peak traffic (PHP/JS).
+    \item Shipped 20+ releases on a weekly cadence, enhancing customers' web and voice experience with minimal service disruption.
+    \item Contributed to AI product development on a modern stack (Python FastAPI).
+    \item Coordinated and ran code review meeting among team members to ensure company and data security best practices were being met in a relaxed collaborative environment.
+  \end{itemize} \\
+  \textbf{\textcolor{blueishgray}{Plum Voice}} & \textbf{\textcolor{blueishgray}{Software Engineer}} \\ {\small \textcolor{datecolor}{09/2021-02/2023}} &
+  \begin{itemize}[leftmargin=*]
+    \item Engineered multiple features for core voice application, integrating live with AWS DynamoDB, AWS S3, AWS Polly, and Google Dialogflow (PHP).
+    \item Redesigned and optimized logs database with PostgreSQL, enhancing capacity and query speed.
+    \item Contributed to core application upgrade from PHP5.3 to PHP7.
+    \item Supervised and mentored interns, assigning daily tasks, fostering problem-solving skills, conducting performance reviews, and providing ongoing support.
+  \end{itemize} \\
+  \textbf{\textcolor{blueishgray}{Plum Voice}} & \textbf{\textcolor{blueishgray}{Junior Software Engineer}} \\ {\small \textcolor{datecolor}{09/2020-08/2021}} &
+  \begin{itemize}[leftmargin=*]
+    \item Designed and coded RESTful API endpoints, enhancing customer control and accelerating information retrieval for applications.
+    \item Architected and developed custom PHP voice applications per customer specifications.
+    \item Developed interface for server maintenance, facilitating removal from production round-robin rotation.
+    \item Provided Tier 3 support for main product stack, including on-call responsibilities.
+  \end{itemize} \\
+\end{tabularx}
+
+\section*{\textcolor{blueishgray}{Skills}}
+% JavaScript (NodeJS, ExpressJS, Bun, VueJS) $\cdot$ SQL (MySQL, Postgres) $\cdot$ NoSQL DBs (DynamoDB, MongoDB, CouchDB) $\cdot$ Python ( FastAPI, Flask) $\cdot$ PHP (Laravel, Koseven) $\cdot$ IaC (AWS CDK) $\cdot$ CI/CD (CircleCI, Bitbucket Pipelines, GoCD) $\cdot$ RabbitMQ $\cdot$ Redis $\cdot$ Docker $\cdot$ Git 
+Languages: JavaScript (NodeJS, ExpressJS, Bun, VueJS), Python (FastAPI, Flask), PHP (Laravel, Koseven) \\
+Databases: SQL (MySQL, Postgres), NoSQL (DynamoDB, MongoDB, CouchDB) \\
+Tools: IaC (AWS CDK), CI/CD (CircleCI, Bitbucket Pipelines, Github Actions), Neovim, RabbitMQ, Redis, Docker, Git
+
+\section*{\textcolor{blueishgray}{Education}}
+\begin{tabularx}{\linewidth}{l|>{\raggedright\arraybackslash}X}
+    {\small \textcolor{datecolor}{09/2016-08/2020}} & \textbf{\textcolor{blueishgray}{Wentworth Institute of Technology} | BA: Computer Engineering} \\  & Magna Cum Laude
+\end{tabularx}
+
+\end{document}
